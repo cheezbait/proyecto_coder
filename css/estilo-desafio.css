@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital@0;1&display=swap');
+
+body {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 50px;
+	text-align: center;
+	color: whitesmoke;
+	padding-top: 100px;
+}
+
+h3 {
+	text-align: center;
+}
+
+
+nav {
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+	padding: 17px;
+	background-color: black;
+	z-index: 3;
+
+}
+
+nav a {
+	text-decoration: none;
+	color: inherit;
+}
+
+p {
+	width: 40%;
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	font-size: 40px;
+	padding: 75px;
+	margin: auto;
+	color: inherit;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: black;
+
+}
+
+footer a {
+	text-decoration: none;
+	color: white;
+}
+
+section a:hover {
+	height: 200px;
+	width: auto;
+}
+
+.textoFoto {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: black;
+	max-width: 100%;
+	justify-content: space-evenly;
+
+}
+
+.imagenPortada__tamaño {
+	display: flex;
+	width: 400px;
+	height: 250px;
+
+}
+
+.frase__cine {
+	display: flex;
+	background-color: white;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 50vh;
+	width: 100%;
+	color: black;
+	font-size: 25px;
+}
+
+.plataformas__logos {
+	display: flex;
+	align-items: center;
+	background-color: black;
+	max-width: 100%;
+	justify-content: space-evenly;
+	height: 50vh;
+	width: 100wh;
+}
+
+.tamañoPosters {
+	height: 300px;
+	width: auto;
+	max-width: 100%;
+
+}
+
+.tamañoPlataformas {
+	height: auto;
+	width: 100px;
+	max-width: 100%;
+
+}
+
+.tamañoRedes {
+	display: flex;
+	height: auto;
+	width: 30px;
+}
+
+
+#fuente {
+	font-family: 'Arimo', sans-serif;
+	color: white;
+}
+
+#fuenteMenu {
+	font-size: 14px;
+}
+
+#primerFondo {
+	display: flex;
+	background-image: url(multimedia/teatro.jpg);
+	height: 100vh;
+	width: 100vw;
+	background-size: cover;
+	max-width: 100%;
+}
+
+#quintoFondo {
+	background-image: url(multimedia/director.jpg);
+	height: 100vh;
+	width: 100vw;
+	background-size: cover;
+	max-width: 100%;
+}
+
+#grilla {
+	display: grid;
+	grid-template-areas:
+		"posterP tituloP spotifyP"
+		"posterP sinopsisP mapaP"
+		"posterP reseñaP trailerP";
+	grid-template-rows: 40px 130px 500px;
+	grid-template-columns: 40% 30% 20%;
+	grid-row-gap: 70px;
+	grid-column-gap: 30px;
+	background-color: black;
+	height: 100vh;
+	width: 100vw;
+	max-width: 100%;
+	margin-top: 5px;
+}
+
+div#posterP {
+	grid-area: posterP;
+
+}
+
+div#posterP img {
+	height: 90%;
+	max-width: 100%;
+}
+
+div#tituloP {
+	grid-area: tituloP;
+	justify-items: center;
+}
+
+div#TituloP h2 {
+	font-size: 300px;
+	color: white;
+}
+
+div#spotifyP {
+	grid-area: spotifyP;
+}
+
+div#mapaP {
+	grid-area: mapaP;
+}
+
+div#sinopsisP {
+	grid-area: sinopsisP;
+}
+
+div#reseñaP {
+	grid-area: reseñaP;
+}
+
+div#trailerP {
+	grid-area: trailerP;
+}
+
+/*SERIES*/
+
+#grillaS {
+	display: grid;
+	grid-template-areas:
+		"posterS tituloS spotifyS"
+		"posterS sinopsisS mapaS"
+		"posterS reseñaS trailerS";
+	grid-template-rows: 60px 130px 500px;
+	grid-template-columns: 40% 30% 20%;
+	grid-row-gap: 70px;
+	grid-column-gap: 30px;
+	background-color: black;
+	height: 100vh;
+	width: 100vw;
+	max-width: 100%;
+	margin-top: 5px;
+}
+
+div#posterS {
+	grid-area: posterS;
+	max-width: 100%;
+
+}
+
+div#posterS img {
+	height: 88%;
+	max-width: 100%;
+}
+
+div#tituloS {
+	grid-area: tituloS;
+	justify-items: center;
+}
+
+div#TituloS h2 {
+	font-size: 300px;
+	color: white;
+}
+
+div#spotifyS {
+	grid-area: spotifyS;
+}
+
+div#mapaS {
+	grid-area: mapaS;
+}
+
+div#sinopsisS {
+	grid-area: sinopsisS;
+}
+
+div#reseñaS {
+	grid-area: reseñaS;
+}
+
+div#trailerS {
+	grid-area: trailerS;
+}
+
+
+
+#grillaD {
+	display: grid;
+	grid-template-areas:
+		"posterD tituloD spotifyD"
+		"posterD sinopsisD mapaD"
+		"posterD reseñaD trailerD";
+	grid-template-rows: 60px 130px 400px;
+	grid-template-columns: 40% 30% 20%;
+	grid-row-gap: 70px;
+	grid-column-gap: 30px;
+	background-color: black;
+	height: 100vh;
+	width: 100vw;
+	margin-top: 30px;
+
+}
+
+/*DOCUMENTALES*/
+
+div#posterD {
+	grid-area: posterD;
+	max-width: 100%;
+
+}
+
+div#posterD img {
+	height: 100%;
+	width: auto;
+	max-width: 100%;
+}
+
+div#tituloD {
+	grid-area: tituloD;
+	justify-items: center;
+}
+
+div#TituloD h2 {
+	font-size: 300px;
+	color: white;
+}
+
+div#spotifyD {
+	grid-area: spotifyD;
+}
+
+div#mapaD {
+	grid-area: mapaD;
+}
+
+div#sinopsisD {
+	grid-area: sinopsisD;
+}
+
+div#reseñaD {
+	grid-area: reseñaD;
+}
+
+div#trailerD {
+	grid-area: trailerD;
+}
+
+/* CARROUSEL */
+.tamañoC {
+	background-color: black;
+	height: 85vh;
+	width: 100%;
+
+}
+
+/*  FORMULARIO  */
+
+.tamañoFormulario {
+	width: 30%;
+	padding-top: 40px;
+	padding-left: 30px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 820px) {
+	.formulario__tamaño {
+		width: 80%;
+		height: 20%;
+		padding-top: 55px;
+		padding-left: 30px;
+	}
+
+	footer {
+		display: flex;
+		flex-direction: row;
+		font-size: 20px;
+		padding: 20px;
+		margin: auto;
+		color: inherit;
+		align-items: center;
+		justify-content: space-evenly;
+		background-color: black;
+	
+	}
+	
+	footer a {
+		text-decoration: none;
+		color: white;
+	}
+
+	h1 {
+		font-weight: bold;
+		font-size: 35px;
+		text-align: center;
+		color: whitesmoke;
+		padding-top: 100px;
+	}
+	
+	h3 {
+		text-align: center;
+		font-size: 15px;
+	}
+
+}
