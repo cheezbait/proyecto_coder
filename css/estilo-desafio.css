@@ -7,7 +7,7 @@ body {
 a {
 	text-decoration: none;
 }
-
+/*    INDEX   */
 h1 {
 	font-weight: bold;
 	font-size: 50px;
@@ -66,6 +66,20 @@ section a:hover {
 	width: auto;
 }
 
+.logoNav{
+	width: 70px;
+	height: 20px;
+}
+
+.logoIndex {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 60vh;
+	width: 30vw;
+	padding-bottom: 60px;
+}
+
 .textoFoto {
 	display: flex;
 	flex-direction: row;
@@ -91,7 +105,7 @@ section a:hover {
 	height: 50vh;
 	width: 100%;
 	color: black;
-	font-size: 25px;
+	font-size: 20px;
 }
 
 .plataformas__logos {
